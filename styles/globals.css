@@ -6,6 +6,10 @@
     font-family: "Inter", sans-serif;
 }
 
+body {
+    background-color: #090A1A;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
