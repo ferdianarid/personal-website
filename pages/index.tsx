@@ -29,8 +29,8 @@ const Home: NextPage = () => {
 							contribute research to build useful products.
 						</Text>
 						<div className="mt-5">
-							<PrimaryButton links="mailto:ferdianahmadrozikin018@gmail.com" children="Email Me" />
-							<SecondaryButton links="#" children="Download CV" />
+							<PrimaryButton links="mailto:ferdianahmadrozikin018@gmail.com">Email Me</PrimaryButton>
+							<SecondaryButton links="#">Download CV</SecondaryButton>
 						</div>
 						<div className='mt-10'>
 							<p className='font-normal text-[#645F71] text-sm mt-5 leading-relaxed'>
