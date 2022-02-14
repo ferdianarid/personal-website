@@ -21,31 +21,31 @@ function Navbar() {
                      <div className="h-[100px] flex items-center justify-between px-4 md:px-32">
                             <div className="flex items-center">
                                    <div className="flex-shrink-0">
-                                          <Image src={Logo} width="100px" height="70px" />
+                                          <Image src={Logo} width="100px" height="70px" alt="brand" />
                                    </div>
                                    <div className="hidden md:block">
                                           <div className="ml-10 flex items-center space-x-4">
-                                                 <Link href="/">
+                                                 <Link href="/" passHref>
                                                         <p className=" text-white text-sm font-normal hover:text-[#24CD34] px-3 py-2 rounded-xl">
                                                                Home
                                                         </p>
                                                  </Link>
-                                                 <Link href="/portfolio">
+                                                 <Link href="/portfolio" passHref>
                                                         <p className="text-white text-sm font-normal hover:text-[#24CD34] px-3 py-2 rounded-xl">
                                                                Portfolio
                                                         </p>
                                                  </Link>
-                                                 <Link href="/blogs">
+                                                 <Link href="/blogs" passHref>
                                                         <p className="text-white text-sm font-normal hover:text-[#24CD34] px-3 py-2 rounded-xl">
                                                                Blogs
                                                         </p>
                                                  </Link>
-                                                 <Link href="/contact">
+                                                 <Link href="/contact" passHref>
                                                         <p className="text-white text-sm font-normal hover:text-[#24CD34] px-3 py-2 rounded-xl">
                                                                Contact
                                                         </p>
                                                  </Link>
-                                                 <Link href="/about">
+                                                 <Link href="/about" passHref>
                                                         <p className="text-white text-sm font-normal hover:text-[#24CD34] px-3 py-2 rounded-xl">
                                                                About
                                                         </p>
@@ -117,33 +117,33 @@ function Navbar() {
                                    <div className="md:hidden" id="mobile-menu">
                                           <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                                                  <Link
-                                                        href="/">
+                                                        href="/" passHref>
                                                         <p className="text-sm text-white hover:text-green-300 block px-3 py-2 rounded-md font-medium">
                                                                Home
                                                         </p>
                                                  </Link>
 
-                                                 <Link href="/marketplace">
+                                                 <Link href="/marketplace" passHref>
                                                         <p className="text-white text-sm  block px-3 py-2 rounded-md font-medium">
                                                                Portfolio
                                                         </p>
                                                  </Link>
 
                                                  <Link
-                                                        href="/blogs">
+                                                        href="/blogs" passHref>
                                                         <p className="text-white text-sm  block px-3 py-2 rounded-md font-medium">
                                                                Blogs
                                                         </p>
                                                  </Link>
 
                                                  <Link
-                                                        href="/contact">
+                                                        href="/contact" passHref>
                                                         <p className="text-white text-sm  block px-3 py-2 rounded-md font-medium">
                                                                Contact
                                                         </p>
                                                  </Link>
                                                  <Link
-                                                        href="/about">
+                                                        href="/about" passHref>
                                                         <p className="text-white text-sm  block px-3 py-2 rounded-md font-medium">
                                                                About
                                                         </p>

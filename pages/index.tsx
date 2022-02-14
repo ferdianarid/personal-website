@@ -18,7 +18,7 @@ const Home: NextPage = () => {
 	return (
 		<React.Fragment>
 			<HomeLayouts>
-				<h1 className='font-extrabold text-white text-opacity-30 text-8xl mt-[150px]'>HELLO.</h1>
+				<h1 className='font-extrabold text-white text-opacity-30 text-8xl mt-[150px]'>HELLO</h1>
 				<div className="w-full flex flex-col md:flex-row justify-between">
 					<div className="w-full md:w-[55%] md:mr-[15%]">
 						<h1 className='font-bold text-white text-4xl md:text-5xl mt-5'><span className='font-normal'>I'm</span> Ferdian Ahmad R</h1>
@@ -49,7 +49,7 @@ const Home: NextPage = () => {
 					</div>
 				</div>
 				<div className="w-full my-10">
-					<SectionText>PORTFOLIO.</SectionText>
+					<SectionText>PORTFOLIO</SectionText>
 					<Text>Lets explore my portfolio. Click to read more about portfolio and description</Text>
 					<div className="grid grid-cols-2 gap-x-6 md:grid-cols-3 md:gap-x-10">
 						<div className="w-full mt-10 hover:p-3 md:hover:p-5 hover:cursor-pointer hover:bg-[#302857] hover:bg-opacity-20 hover:rounded-xl transition-all duration-700">
@@ -98,7 +98,7 @@ const Home: NextPage = () => {
 					</div>
 				</div>
 				<div className="w-full">
-					<SectionText>WORK EXPERIENCE.</SectionText>
+					<SectionText>WORK EXPERIENCE</SectionText>
 					<Text>This is my working experience. Company name, long time contribution and Position or Role.</Text>
 					{DataExperience.map((experience: any) => (
 						<Experience key={experience.id}
@@ -114,7 +114,7 @@ const Home: NextPage = () => {
 					))}
 				</div>
 				<div className="w-full my-10">
-					<SectionText>ARTICLES.</SectionText>
+					<SectionText>ARTICLES</SectionText>
 					<Text>This is my article post. I'm usually create a posts in spare time.</Text>
 					<div className="grid grid-cols-1 md:grid-cols-3 gap-x-10 md:mt-6">
 						{ArticleItems.map((article) => (

@@ -10,7 +10,7 @@ const Article = (props: IArticles) => {
               <React.Fragment>
                      <div className="w-full bg-[#1f2549] bg-opacity-30 rounded-lg p-4 mt-8">
                             <div className="relative">
-                                   <Image src={srcImage} className="rounded-md transition-all hover:scale-110 duration-700" />
+                                   <Image src={srcImage} alt="images" className="rounded-md transition-all hover:scale-110 duration-700" />
                                    <ArticleBadge>{category}</ArticleBadge>
                             </div>
                             <h1 className="font-bold text-xl leading-normal text-white mt-4">{title}</h1>
