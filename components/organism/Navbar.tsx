@@ -26,34 +26,34 @@ function Navbar() {
                                    <div className="hidden md:block">
                                           <div className="ml-10 flex items-center space-x-4">
                                                  <Link href="/">
-                                                        <a className=" text-white text-sm font-normal hover:text-[#24CD34] px-3 py-2 rounded-xl">
+                                                        <p className=" text-white text-sm font-normal hover:text-[#24CD34] px-3 py-2 rounded-xl">
                                                                Home
-                                                        </a>
+                                                        </p>
                                                  </Link>
                                                  <Link href="/portfolio">
-                                                        <a className="text-white text-sm font-normal hover:text-[#24CD34] px-3 py-2 rounded-xl">
+                                                        <p className="text-white text-sm font-normal hover:text-[#24CD34] px-3 py-2 rounded-xl">
                                                                Portfolio
-                                                        </a>
+                                                        </p>
                                                  </Link>
                                                  <Link href="/blogs">
-                                                        <a className="text-white text-sm font-normal hover:text-[#24CD34] px-3 py-2 rounded-xl">
+                                                        <p className="text-white text-sm font-normal hover:text-[#24CD34] px-3 py-2 rounded-xl">
                                                                Blogs
-                                                        </a>
+                                                        </p>
                                                  </Link>
                                                  <Link href="/contact">
-                                                        <a className="text-white text-sm font-normal hover:text-[#24CD34] px-3 py-2 rounded-xl">
+                                                        <p className="text-white text-sm font-normal hover:text-[#24CD34] px-3 py-2 rounded-xl">
                                                                Contact
-                                                        </a>
+                                                        </p>
                                                  </Link>
                                                  <Link href="/about">
-                                                        <a className="text-white text-sm font-normal hover:text-[#24CD34] px-3 py-2 rounded-xl">
+                                                        <p className="text-white text-sm font-normal hover:text-[#24CD34] px-3 py-2 rounded-xl">
                                                                About
-                                                        </a>
+                                                        </p>
                                                  </Link>
                                                  <Link href="/hireme" passHref>
-                                                        <a href="/" className="py-2 px-4 rounded-md bg-[#24CD34] text-sm font-normal text-white">
+                                                        <p className="py-2 px-4 rounded-md bg-[#24CD34] text-sm font-normal text-white">
                                                                Hire me
-                                                        </a>
+                                                        </p>
                                                  </Link>
                                           </div>
                                    </div>
@@ -118,40 +118,40 @@ function Navbar() {
                                           <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                                                  <Link
                                                         href="/">
-                                                        <a className="text-sm text-white hover:text-green-300 block px-3 py-2 rounded-md font-medium">
+                                                        <p className="text-sm text-white hover:text-green-300 block px-3 py-2 rounded-md font-medium">
                                                                Home
-                                                        </a>
+                                                        </p>
                                                  </Link>
 
                                                  <Link href="/marketplace">
-                                                        <a className="text-white text-sm  block px-3 py-2 rounded-md font-medium">
+                                                        <p className="text-white text-sm  block px-3 py-2 rounded-md font-medium">
                                                                Portfolio
-                                                        </a>
+                                                        </p>
                                                  </Link>
 
                                                  <Link
                                                         href="/blogs">
-                                                        <a className="text-white text-sm  block px-3 py-2 rounded-md font-medium">
+                                                        <p className="text-white text-sm  block px-3 py-2 rounded-md font-medium">
                                                                Blogs
-                                                        </a>
+                                                        </p>
                                                  </Link>
 
                                                  <Link
                                                         href="/contact">
-                                                        <a className="text-white text-sm  block px-3 py-2 rounded-md font-medium">
+                                                        <p className="text-white text-sm  block px-3 py-2 rounded-md font-medium">
                                                                Contact
-                                                        </a>
+                                                        </p>
                                                  </Link>
                                                  <Link
                                                         href="/about">
-                                                        <a className="text-white text-sm  block px-3 py-2 rounded-md font-medium">
+                                                        <p className="text-white text-sm  block px-3 py-2 rounded-md font-medium">
                                                                About
-                                                        </a>
+                                                        </p>
                                                  </Link>
                                                  <Link href="/hireme" passHref>
-                                                        <a href="/" className="py-2 px-4 rounded-md bg-[#24CD34] text-sm font-normal text-white">
+                                                        <p className="py-2 px-4 rounded-md bg-[#24CD34] text-sm font-normal text-white">
                                                                Hire me
-                                                        </a>
+                                                        </p>
                                                  </Link>
                                           </div>
                                    </div>

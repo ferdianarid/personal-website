@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from "next/image"
+import Link from 'next/link'
 import type { NextPage } from 'next'
 import HomeLayouts from 'layouts/HomeLayouts'
 import { ArticleItems } from "utils/articles"
@@ -36,15 +37,15 @@ const Home: NextPage = () => {
 								Connect with me on
 							</p>
 							<div className="flex items-center gap-x-6">
-								<a href="https://linkedin.com/in/ferdianar" className='hover:text-[#24CD34] font-medium text-white text-sm mt-1 leading-relaxed'>LinkedIn</a>
-								<a href="https://instagram.com/ferdianarid" className='hover:text-[#24CD34] font-medium text-white text-sm mt-1 leading-relaxed'>Instagram</a>
-								<a href="https://facebook.com/ferdianar" className='hover:text-[#24CD34] font-medium text-white text-sm mt-1 leading-relaxed'>Facebook</a>
-								<a href="https://github.com/ferdianar" className='hover:text-[#24CD34] font-medium text-white text-sm mt-1 leading-relaxed'>Github</a>
+								<Link href="https://linkedin.com/in/ferdianar"><p className='hover:text-[#24CD34] font-medium text-white text-sm mt-1 leading-relaxed'>LinkedIn</p></Link>
+								<Link href="https://instagram.com/ferdianarid"><p className='hover:text-[#24CD34] font-medium text-white text-sm mt-1 leading-relaxed'>Instagram</p></Link>
+								<Link href="https://facebook.com/ferdianar"><p className='hover:text-[#24CD34] font-medium text-white text-sm mt-1 leading-relaxed'>Facebook</p></Link>
+								<Link href="https://github.com/ferdianar"><p className='hover:text-[#24CD34] font-medium text-white text-sm mt-1 leading-relaxed'>Github</p></Link>
 							</div>
 						</div>
 					</div>
 					<div className="w-full flex items-center justify-center mt-10 md:w-[30%] md:-mt-20">
-						<Image src={ProfilePhoto} height="500px" width="350px" />
+						<Image src={ProfilePhoto} height="500px" width="350px" alt="profile" />
 					</div>
 				</div>
 				<div className="w-full my-10">
@@ -52,21 +53,21 @@ const Home: NextPage = () => {
 					<Text>Lets explore my portfolio. Click to read more about portfolio and description</Text>
 					<div className="grid grid-cols-2 gap-x-6 md:grid-cols-3 md:gap-x-10">
 						<div className="w-full mt-10 hover:p-3 md:hover:p-5 hover:cursor-pointer hover:bg-[#302857] hover:bg-opacity-20 hover:rounded-xl transition-all duration-700">
-							<Image className='rounded-md' src={House2} />
+							<Image className='rounded-md' src={House2} alt="house" />
 							<h1 className='text-white font-bold md:text-xl leading-normal mt-4'>Housing Apps - Find your dream home</h1>
 							<Text>Frontend Web Aplikasi yang berfokus untuk pencarian rumah dengan mudah</Text>
 							<Text>Tech Stack</Text>
 							<p className='text-white font-normal text-sm'>React.js, Tailwind CSS, Headless UI, Vercel</p>
 						</div>
 						<div className="w-full mt-10 hover:p-3 md:hover:p-5 hover:cursor-pointer hover:bg-[#302857] hover:bg-opacity-20 hover:rounded-xl transition-all duration-700">
-							<Image className='rounded-md' src={Delivery} />
+							<Image className='rounded-md' src={Delivery} alt="house" />
 							<h1 className='text-white font-bold md:text-xl leading-normal mt-4'>Delivery Apps - Send package fast and easly</h1>
 							<Text>Landing page web delivery. Web tentang jasa pengiriman barang</Text>
 							<Text>Tech Stack</Text>
 							<p className='text-white font-normal text-sm'>React.js, Tailwind CSS, Headless UI, Vercel</p>
 						</div>
 						<div className="w-full mt-10 hover:p-3 md:hover:p-5 hover:cursor-pointer hover:bg-[#302857] hover:bg-opacity-20 hover:rounded-xl transition-all duration-700">
-							<Image className='rounded-md' src={House2} />
+							<Image className='rounded-md' src={House2} alt="house" />
 							<h1 className='text-white font-bold md:text-xl leading-normal mt-4'>Housing Apps - Find your dream home</h1>
 							<Text>Frontend Web Aplikasi yang berfokus untuk pencarian rumah mudah</Text>
 							<Text>Tech Stack</Text>
@@ -74,21 +75,21 @@ const Home: NextPage = () => {
 						</div>
 
 						<div className="w-full mt-10 hover:p-3 md:hover:p-5 hover:cursor-pointer hover:bg-[#302857] hover:bg-opacity-20 hover:rounded-xl transition-all duration-700">
-							<Image className='rounded-md' src={House2} />
+							<Image className='rounded-md' src={House2} alt="house" />
 							<h1 className='text-white font-bold md:text-xl leading-normal mt-4'>Housing Apps - Find your dream home</h1>
 							<Text>Frontend Web Aplikasi yang berfokus untuk pencarian rumah mudah</Text>
 							<Text>Tech Stack</Text>
 							<p className='text-white font-normal text-sm'>React.js, Tailwind CSS, Headless UI, Vercel</p>
 						</div>
 						<div className="w-full mt-10 hover:p-3 md:hover:p-5 hover:cursor-pointer hover:bg-[#302857] hover:bg-opacity-20 hover:rounded-xl transition-all duration-700">
-							<Image className='rounded-md' src={Delivery} />
+							<Image className='rounded-md' src={Delivery} alt="house" />
 							<h1 className='text-white font-bold md:text-xl leading-normal mt-4'>Delivery Apps - Send package fast and easly</h1>
 							<Text>Landing page web delivery. Web tentang jasa pengiriman barang</Text>
 							<Text>Tech Stack</Text>
 							<p className='text-white font-normal text-sm'>React.js, Tailwind CSS, Headless UI, Vercel</p>
 						</div>
 						<div className="w-full mt-10 hover:p-3 md:hover:p-5 hover:cursor-pointer hover:bg-[#302857] hover:bg-opacity-20 hover:rounded-xl transition-all duration-700">
-							<Image className='rounded-md' src={House2} />
+							<Image className='rounded-md' src={House2} alt="house" />
 							<h1 className='text-white font-bold md:text-xl leading-normal mt-4'>Housing Apps - Find your dream home</h1>
 							<Text>Frontend Web Aplikasi yang berfokus untuk pencarian rumah dengan mudah</Text>
 							<Text>Tech Stack</Text>
