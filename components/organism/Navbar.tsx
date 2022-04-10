@@ -20,7 +20,7 @@ function Navbar() {
 	const [isOpen, setIsOpen] = useState(false);
 
 	return (
-		<nav className="w-full absolute z-40 bg-transparent top-0 mx-auto">
+		<nav className="w-full absolute z-40 top-0 mx-auto navmobile">
 			<div className="h-[100px] flex items-center justify-between px-4 md:px-32">
 				<div className="flex items-center">
 					<div className="flex-shrink-0">
@@ -38,9 +38,9 @@ function Navbar() {
 									Portfolio
 								</p>
 							</Link>
-							<Link href="/blogs" passHref>
+							<Link href="/articles" passHref>
 								<p className="text-white text-sm font-normal hover:text-[#916BFF] px-3 py-2 rounded-xl">
-									Blogs
+									Articles
 								</p>
 							</Link>
 							<Link href="/contact" passHref>
@@ -126,16 +126,16 @@ function Navbar() {
 								</p>
 							</Link>
 
-							<Link href="/marketplace" passHref>
+							<Link href="/portfolio" passHref>
 								<p className="text-white text-sm  block px-3 py-2 rounded-md font-medium">
 									Portfolio
 								</p>
 							</Link>
 
 							<Link
-								href="/blogs" passHref>
+								href="/articles" passHref>
 								<p className="text-white text-sm  block px-3 py-2 rounded-md font-medium">
-									Blogs
+									Articles
 								</p>
 							</Link>
 

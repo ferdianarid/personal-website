@@ -8,7 +8,7 @@ interface IText {
 const Text = ({ children, addclass }: IText) => {
 	return (
 		<React.Fragment>
-			<p className={`font-normal text-[#645F71] text-sm my-2 leading-relaxed ${addclass}`}>
+			<p className={`text-[#adaab3] text-sm my-2 leading-relaxed ${addclass}`}>
 				{children}
 			</p>
 		</React.Fragment>
