@@ -1,34 +1,4 @@
 export const ClassCategory = [{
-        id: 1,
-        name: "Data Structures",
-        links: "data-structures"
-    },
-    {
-        id: 2,
-        name: "Web Development",
-        links: "web-development"
-    },
-    {
-        id: 3,
-        name: "User Interface Design",
-        links: "user-interface-design"
-    },
-    {
-        id: 4,
-        name: "Infrastructure Server",
-        links: "infrastructure-server"
-    },
-    {
-        id: 5,
-        name: "Data Engineering",
-        links: "data-engineering"
-    },
-    {
-        id: 6,
-        name: "Graphic Design",
-        links: "graphic-design"
-    },
-    {
         id: 6,
         name: "Search Engine Optimization",
         links: "search-engine-optimization"

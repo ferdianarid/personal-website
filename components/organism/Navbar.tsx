@@ -205,14 +205,14 @@ function Navbar() {
 								</p>
 							</Link>
 
-							<div className="relative inline-block text-left">
+							<div className="relative z-30 pt-2 md:pt-0 ml-3 md:ml-0 text-left">
 								<Menu>
 									{({ open }: any) => (
 										<React.Fragment>
 											<span className="rounded-md shadow-sm">
 												<Menu.Button className="inline-flex items-center space-x-2 text-sm text-white justify-center transition duration-150 ease-in-out  focus:border-blue-300 focus:shadow-outline-blue">
 													<Link href="/articles">
-														<p className="nav-link font-semibold text-white hover:text-[#916BFF] hover:cursor-pointer ml-3 md:ml-0"> Articles </p>
+														<p className="nav-link font-semibold text-white hover:text-[#916BFF] hover:cursor-pointer"> Articles </p>
 													</Link>
 													{
 														open ? <FaChevronUp width={24} /> : <FaChevronDown width={24} />
@@ -247,7 +247,7 @@ function Navbar() {
 								</Menu>
 							</div>
 
-							<div className="relative inline-block text-left">
+							<div className="relative pt-2 md:pt-0 ml-3 md:ml-0 text-left">
 								<Menu>
 									{({ open }: any) => (
 										<React.Fragment>
