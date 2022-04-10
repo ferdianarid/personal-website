@@ -9,6 +9,8 @@ import { PrimaryButton, SecondaryButton } from 'components/atoms/Button'
 import HeaderLayouts from 'layouts/HeaderLayouts'
 import { Socials } from "../utils/socials"
 import { DataExperience } from "utils/experience"
+import { ScrollTop } from 'helpers/Scrolltop'
+import ScrollButton from 'components/atoms/ScrollButton'
 
 const Home: NextPage = () => {
 	return (
@@ -58,8 +60,8 @@ const Home: NextPage = () => {
 						/>
 					))}
 				</div>
-			</PageLayouts >
-		</React.Fragment >
+			</PageLayouts>
+		</React.Fragment>
 	)
 }
 

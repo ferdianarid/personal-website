@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 // import Image Next
 import Image from "next/image"
@@ -13,14 +13,13 @@ import logos from "../../assets/logos.png"
 
 import Logo from "public/images/logo.png"
 import { PrimaryButton, SecondaryButton, OutlinePrimary } from "components/atoms/Button";
-
 // Navbar Components
 function Navbar() {
 	// State isOpen
 	const [isOpen, setIsOpen] = useState(false);
 
 	return (
-		<nav className="w-full absolute z-40 top-0 mx-auto navmobile">
+		<nav className="w-full fixed z-40 top-0 mx-auto bg-[#09062d] bg-opacity-50 backdrop-blur-md backdrop-filter">
 			<div className="h-[100px] flex items-center justify-between px-4 md:px-32">
 				<div className="flex items-center">
 					<div className="flex-shrink-0">
