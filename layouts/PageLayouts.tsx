@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from 'components/organism/Navbar'
 import Footer from 'components/templates/Footer'
+import ScrollButton from 'components/atoms/ScrollButton'
 
 const PageLayouts = ({ children }: any) => {
 	return (
@@ -14,6 +15,7 @@ const PageLayouts = ({ children }: any) => {
 				</div>
 				{/* Footer Section */}
 				<Footer />
+				<ScrollButton>Scroll Top</ScrollButton>
 			</div>
 		</React.Fragment>
 	)
