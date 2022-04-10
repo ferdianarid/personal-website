@@ -1,6 +1,8 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Ferdian's Personal Website
+Build with Next.js React Tailwind CSS and TypeScript 
+`https://ferdian.vercel.app/`
 
-## Getting Started
+<img src="https://raw.githubusercontent.com/ferdianar/ferdianarid/master/assets/preview.png" alt="website" />
 
 First, run the development server:
 
