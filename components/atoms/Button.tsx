@@ -1,5 +1,11 @@
 import React from 'react'
 
+interface IButton {
+	children: any
+	links?: string
+	addclass?: string
+}
+
 export const PrimaryButton = ({ children, links }: any) => {
 	return (
 		<React.Fragment>
@@ -16,10 +22,10 @@ export const SecondaryButton = ({ children, links }: any) => {
 	)
 }
 
-export const OutlinePrimary = ({ children, links }: any) => {
+export const OutlinePrimary = ({ children, links, addclass }: IButton) => {
 	return (
 		<React.Fragment>
-			<a href={links} className="py-2 px-5 rounded-md border  border-[#916BFF] hover:border-[#350cb3] text-md font-medium text-white">{children}</a>
+			<a href={links} className={`py-2 px-5 rounded-md border  border-[#916BFF] hover:border-[#350cb3] text-md font-medium text-white ${addclass}`}>{children}</a>
 		</React.Fragment>
 	)
 }

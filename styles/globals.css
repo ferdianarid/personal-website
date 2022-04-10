@@ -10,10 +10,34 @@ body {
     background-color: #090A1A;
 }
 
+.sponsor {
+    filter: grayscale(100%);
+    transition: .5s ease-out;
+}
+
+.sponsor:hover {
+    filter: grayscale(0%);
+}
+
 .cover {
     background-image: url("../assets/banner.jpg");
     background-size: cover;
     height: 690px;
+}
+
+.footer {
+    background-image: url("../assets/footer.jpg");
+    background-size: cover;
+    height: 400px;
+}
+
+@media screen and (max-width: 768px) {
+    .cover {
+        height: 800px;
+    }
+    .footer {
+        height: 600px;
+    }
 }
 
 @media screen and (max-width: 768px) {
