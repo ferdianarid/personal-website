@@ -1,25 +1,19 @@
 import React from 'react'
-import Image from "next/image"
-import Link from 'next/link'
 import type { NextPage } from 'next'
-import HomeLayouts from 'layouts/HomeLayouts'
-import { ArticleItems } from "utils/articles"
-import { DataExperience } from "utils/experience"
+import PageLayouts from 'layouts/PageLayouts'
+import SocialLink from 'components/organism/SocialLink'
 import Text from 'components/atoms/Text'
 import SectionText from 'components/atoms/SectionText'
-import { PrimaryButton, SecondaryButton } from 'components/atoms/Button'
-import Article from 'components/organism/Article'
 import Experience from 'components/organism/Experience'
-import Delivery from "public/images/DeliveryApps1.jpg"
-import House2 from "public/images/House2.jpg"
+import { PrimaryButton, SecondaryButton } from 'components/atoms/Button'
 import HeaderLayouts from 'layouts/HeaderLayouts'
 import { Socials } from "../utils/socials"
-import SocialLink from 'components/organism/SocialLink'
-import PortfolioCard from 'components/templates/PortfolioCard'
+import { DataExperience } from "utils/experience"
 
 const Home: NextPage = () => {
 	return (
 		<React.Fragment>
+			{/* Header Section */}
 			<HeaderLayouts>
 				<div className="w-full text-center py-[170px]">
 					<div className="w-full px-4 md:px-28">
@@ -46,7 +40,8 @@ const Home: NextPage = () => {
 					</div>
 				</div>
 			</HeaderLayouts>
-			<HomeLayouts>
+			{/* Work Experrience Section */}
+			<PageLayouts>
 				<div className="w-full">
 					<SectionText>WORK EXPERIENCE</SectionText>
 					<Text>This is my working experience. Company name, long time contribution and Position or Role.</Text>
@@ -63,23 +58,7 @@ const Home: NextPage = () => {
 						/>
 					))}
 				</div>
-				<div className="w-full my-10">
-					<SectionText>ARTICLES</SectionText>
-					<Text>This is my article post. I'm usually create a posts in spare time.</Text>
-					<div className="grid grid-cols-1 md:grid-cols-3 gap-x-10 md:mt-6">
-						{ArticleItems.map((article) => (
-							<Article key={article.id}
-								srcImage={Delivery}
-								title={article.title}
-								author={article.author}
-								category={article.category}
-								subtitle={article.subtitle}
-								dateposted={article.dateposted}
-							/>
-						))}
-					</div>
-				</div>
-			</HomeLayouts >
+			</PageLayouts >
 		</React.Fragment >
 	)
 }
