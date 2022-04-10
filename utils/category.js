@@ -11,7 +11,7 @@ export const ClassCategory = [{
     {
         id: 8,
         name: "Docker Container",
-        links: "docker-container"
+        links: "dockercontainer"
     },
     {
         id: 9,
