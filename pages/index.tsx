@@ -11,6 +11,13 @@ import { Socials } from "../utils/socials"
 import { DataExperience } from "utils/experience"
 import { ScrollTop } from 'helpers/Scrolltop'
 import ScrollButton from 'components/atoms/ScrollButton'
+import Image from 'next/image'
+
+import reactimage from "../assets/react.png"
+import nextimage from "../assets/next.png"
+import grapqlimage from "../assets/graphql.png"
+import reduximage from "../assets/redux.png"
+import HighlightText from 'components/atoms/HighlightText'
 
 const Home: NextPage = () => {
 	return (
@@ -21,7 +28,7 @@ const Home: NextPage = () => {
 					<div className="w-full px-4 md:px-28">
 						<h1 className='font-bold text-white text-4xl md:text-5xl mt-5'><span className='font-normal'>I'm</span> Ferdian Ahmad R</h1>
 						<h1 className='font-bold text-[#916BFF] text-2xl my-2'>Frontend Engineer</h1>
-						<Text>I'm have been working as a Frontend Engineer for more than 2 years. I'm passionate about learning new technologies like JavaScript Framework and other libraries. Eager learn a new things and Focus on deliver a good product features for solve a user problem.
+						<Text>I'm have been working as a <HighlightText> Frontend Engineer </HighlightText> for more than <HighlightText> 2 years </HighlightText>. I'm passionate about learning new technologies like <HighlightText> JavaScript Framework </HighlightText> and other libraries. Eager learn a new things and Focus on deliver a good product features for <HighlightText> solve a user problem </HighlightText>.
 						</Text>
 						<div className="mt-10">
 							<PrimaryButton links="mailto:ferdianahmadrozikin018@gmail.com">Email Me</PrimaryButton>

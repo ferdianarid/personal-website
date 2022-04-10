@@ -11,15 +11,14 @@ import { Transition } from "@headlessui/react"
 
 import logos from "../../assets/logos.png"
 
-import Logo from "public/images/logo.png"
-import { PrimaryButton, SecondaryButton, OutlinePrimary } from "components/atoms/Button";
+import { OutlinePrimary } from "components/atoms/Button";
 // Navbar Components
 function Navbar() {
 	// State isOpen
 	const [isOpen, setIsOpen] = useState(false);
 
 	return (
-		<nav className="w-full fixed z-40 top-0 mx-auto bg-[#09062d] bg-opacity-50 backdrop-blur-md backdrop-filter">
+		<nav className="w-full max-w-[1440px] fixed z-40 top-0 mx-auto bg-[#09062d] bg-opacity-50 backdrop-blur-md backdrop-filter">
 			<div className="h-[100px] flex items-center justify-between px-4 md:px-32">
 				<div className="flex items-center">
 					<div className="flex-shrink-0">
@@ -117,7 +116,7 @@ function Navbar() {
 			>
 				{(ref: any) => (
 					<div className="md:hidden" id="mobile-menu">
-						<div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+						<div ref={ref} className="px-2 pb-10 pt-2 space-y-1 sm:px-3">
 							<Link
 								href="/" passHref>
 								<p className="text-sm text-white hover:text-green-300 block px-3 py-2 rounded-md font-medium">
@@ -146,14 +145,14 @@ function Navbar() {
 							</Link>
 							<Link
 								href="/about" passHref>
-								<p className="text-white text-sm  block px-3 py-2 rounded-md font-medium">
+								<p className="text-white text-sm block px-3 py-2 rounded-md font-medium">
 									About
 								</p>
 							</Link>
 							<Link href="/hireme" passHref>
-								<p className="py-2 px-4 rounded-md bg-[#24CD34] text-sm font-normal text-white">
+								<OutlinePrimary addclass="ml-2">
 									Hire me
-								</p>
+								</OutlinePrimary>
 							</Link>
 						</div>
 					</div>
