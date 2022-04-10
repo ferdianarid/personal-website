@@ -13,6 +13,7 @@ body {
 .cover {
     background-image: url("../assets/banner.jpg");
     background-size: cover;
+    height: 690px;
 }
 
 @media screen and (max-width: 768px) {
