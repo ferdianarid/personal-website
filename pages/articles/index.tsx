@@ -3,6 +3,7 @@ import Article from 'components/organism/Article'
 import HeaderLayouts from 'layouts/HeaderLayouts'
 import PageLayouts from 'layouts/PageLayouts'
 import { NextPage } from 'next'
+import Head from 'next/head'
 import React from 'react'
 import { ArticleItems } from 'utils/articles'
 import Text from "../../components/atoms/Text"
@@ -11,6 +12,16 @@ import Delivery from "../../public/images/DeliveryApps1.jpg"
 const Articles: NextPage = () => {
     return (
         <React.Fragment>
+            {/* Meta and SEO Concern */}
+            <Head>
+                <title>Ferdian's - Articles</title>
+                <meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
+                <meta httpEquiv="X-UA-Compatible" content="IE=Edge, chrome" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <meta name="keywords" content="homepage ferdian" />
+                <meta property="og:title" content="homepage" key="title" />
+                <meta name="description" content="homepage ferdian" />
+            </Head>
             <HeaderLayouts>
                 <div className="w-full text-center pt-[240px] pb-[150px]">
                     <div className="w-full px-4 md:px-28">

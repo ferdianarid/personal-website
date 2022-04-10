@@ -7,11 +7,17 @@ import Image from "next/image"
 import Link from "next/link"
 
 // import  TransitionHeadless UI React
-import { Transition } from "@headlessui/react"
+import { Menu, Transition } from "@headlessui/react"
 
 import logos from "../../assets/logos.png"
 
-import { OutlinePrimary } from "components/atoms/Button";
+import { OutlinePrimary } from "components/atoms/Button"
+
+import { FaChevronUp, FaChevronDown } from "react-icons/fa"
+
+import { ClassCategory, PortfolioCategory } from "../../utils/category"
+import ItemsCategory from "./ItemsCategory";
+
 // Navbar Components
 function Navbar() {
 	// State isOpen
@@ -27,27 +33,102 @@ function Navbar() {
 					<div className="hidden md:block">
 						<div className="ml-10 flex items-center space-x-4">
 							<Link href="/" passHref>
-								<p className=" text-white text-sm font-normal hover:text-[#916BFF] px-3 py-2 rounded-xl">
+								<p className=" text-white text-sm font-semibold px-3 py-2 rounded-xl hover:text-[#916BFF] hover:cursor-pointer">
 									Home
 								</p>
 							</Link>
-							<Link href="/portfolio" passHref>
-								<p className="text-white text-sm font-normal hover:text-[#916BFF] px-3 py-2 rounded-xl">
-									Portfolio
-								</p>
-							</Link>
-							<Link href="/articles" passHref>
-								<p className="text-white text-sm font-normal hover:text-[#916BFF] px-3 py-2 rounded-xl">
-									Articles
-								</p>
-							</Link>
+
+							<div className="relative inline-block text-left">
+								<Menu>
+									{({ open }: any) => (
+										<React.Fragment>
+											<span className="rounded-md shadow-sm">
+												<Menu.Button className="inline-flex items-center space-x-2 text-sm text-white justify-center transition duration-150 ease-in-out  focus:border-blue-300 focus:shadow-outline-blue">
+													<Link href="/articles">
+														<p className="nav-link font-semibold text-white hover:text-[#916BFF] hover:cursor-pointer"> Articles </p>
+													</Link>
+													{
+														open ? <FaChevronUp width={24} /> : <FaChevronDown width={24} />
+													}
+												</Menu.Button>
+											</span>
+
+											<Transition
+												show={open}
+												enter="transition ease-out duration-100"
+												enterFrom="transform opacity-0 scale-95"
+												enterTo="transform opacity-100 scale-100"
+												leave="transition ease-in duration-75"
+												leaveFrom="transform opacity-100 scale-100"
+												leaveTo="transform opacity-0 scale-95"
+											>
+												<Menu.Items
+													static
+													className="absolute left-0 w-56 mt-2 origin-top-right bg-white divide-y divide-gray-100 rounded-md shadow-lg outline-none"
+												>
+													<div className="my-1">
+														{
+															ClassCategory.map((items) => (
+																<ItemsCategory key={items.id} category={items.name} linkRedirect={items.links} />
+															))
+														}
+													</div>
+												</Menu.Items>
+											</Transition>
+										</React.Fragment>
+									)}
+								</Menu>
+							</div>
+
+							<div className="relative inline-block text-left">
+								<Menu>
+									{({ open }: any) => (
+										<React.Fragment>
+											<span className="rounded-md shadow-sm">
+												<Menu.Button className="inline-flex items-center space-x-2 text-sm text-white justify-center transition duration-150 ease-in-out  focus:border-blue-300 focus:shadow-outline-blue">
+													<Link href="/portfolio">
+														<p className="nav-link font-semibold text-white hover:text-[#916BFF] hover:cursor-pointer"> Portfolio </p>
+													</Link>
+													{
+														open ? <FaChevronUp width={24} /> : <FaChevronDown width={24} />
+													}
+												</Menu.Button>
+											</span>
+
+											<Transition
+												show={open}
+												enter="transition ease-out duration-100"
+												enterFrom="transform opacity-0 scale-95"
+												enterTo="transform opacity-100 scale-100"
+												leave="transition ease-in duration-75"
+												leaveFrom="transform opacity-100 scale-100"
+												leaveTo="transform opacity-0 scale-95"
+											>
+												<Menu.Items
+													static
+													className="absolute left-0 w-56 mt-2 origin-top-right bg-white divide-y divide-gray-100 rounded-md shadow-lg outline-none"
+												>
+													<div className="my-1">
+														{
+															PortfolioCategory.map((items) => (
+																<ItemsCategory key={items.id} category={items.name} linkRedirect={items.links} />
+															))
+														}
+													</div>
+												</Menu.Items>
+											</Transition>
+										</React.Fragment>
+									)}
+								</Menu>
+							</div>
+
 							<Link href="/contact" passHref>
-								<p className="text-white text-sm font-normal hover:text-[#916BFF] px-3 py-2 rounded-xl">
+								<p className="text-white text-sm font-semibold hover:text-[#916BFF] hover:cursor-pointer px-3 py-2 rounded-xl">
 									Contact
 								</p>
 							</Link>
 							<Link href="/about" passHref>
-								<p className="text-white text-sm font-normal hover:text-[#916BFF] px-3 py-2 rounded-xl">
+								<p className="text-white text-sm font-semibold hover:text-[#916BFF] hover:cursor-pointer px-3 py-2 rounded-xl">
 									About
 								</p>
 							</Link>
@@ -119,33 +200,104 @@ function Navbar() {
 						<div ref={ref} className="px-2 pb-10 pt-2 space-y-1 sm:px-3">
 							<Link
 								href="/" passHref>
-								<p className="text-sm text-white hover:text-green-300 block px-3 py-2 rounded-md font-medium">
+								<p className="text-sm text-white hover:text-[#916BFF] hover:cursor-pointer block px-3 py-2 rounded-md font-medium">
 									Home
 								</p>
 							</Link>
 
-							<Link href="/portfolio" passHref>
-								<p className="text-white text-sm  block px-3 py-2 rounded-md font-medium">
-									Portfolio
-								</p>
-							</Link>
+							<div className="relative inline-block text-left">
+								<Menu>
+									{({ open }: any) => (
+										<React.Fragment>
+											<span className="rounded-md shadow-sm">
+												<Menu.Button className="inline-flex items-center space-x-2 text-sm text-white justify-center transition duration-150 ease-in-out  focus:border-blue-300 focus:shadow-outline-blue">
+													<Link href="/articles">
+														<p className="nav-link font-semibold text-white hover:text-[#916BFF] hover:cursor-pointer ml-3 md:ml-0"> Articles </p>
+													</Link>
+													{
+														open ? <FaChevronUp width={24} /> : <FaChevronDown width={24} />
+													}
+												</Menu.Button>
+											</span>
 
-							<Link
-								href="/articles" passHref>
-								<p className="text-white text-sm  block px-3 py-2 rounded-md font-medium">
-									Articles
-								</p>
-							</Link>
+											<Transition
+												show={open}
+												enter="transition ease-out duration-100"
+												enterFrom="transform opacity-0 scale-95"
+												enterTo="transform opacity-100 scale-100"
+												leave="transition ease-in duration-75"
+												leaveFrom="transform opacity-100 scale-100"
+												leaveTo="transform opacity-0 scale-95"
+											>
+												<Menu.Items
+													static
+													className="absolute left-0 w-56 mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none"
+												>
+													<div className="my-1">
+														{
+															ClassCategory.map((items) => (
+																<ItemsCategory key={items.id} category={items.name} linkRedirect={items.links} />
+															))
+														}
+													</div>
+												</Menu.Items>
+											</Transition>
+										</React.Fragment>
+									)}
+								</Menu>
+							</div>
+
+							<div className="relative inline-block text-left">
+								<Menu>
+									{({ open }: any) => (
+										<React.Fragment>
+											<span className="rounded-md shadow-sm">
+												<Menu.Button className="inline-flex items-center space-x-2 text-sm text-white justify-center transition duration-150 ease-in-out  focus:border-blue-300 focus:shadow-outline-blue">
+													<Link href="/portfolio">
+														<p className="nav-link font-semibold text-white hover:text-[#916BFF] hover:cursor-pointer"> Portfolio </p>
+													</Link>
+													{
+														open ? <FaChevronUp width={24} /> : <FaChevronDown width={24} />
+													}
+												</Menu.Button>
+											</span>
+
+											<Transition
+												show={open}
+												enter="transition ease-out duration-100"
+												enterFrom="transform opacity-0 scale-95"
+												enterTo="transform opacity-100 scale-100"
+												leave="transition ease-in duration-75"
+												leaveFrom="transform opacity-100 scale-100"
+												leaveTo="transform opacity-0 scale-95"
+											>
+												<Menu.Items
+													static
+													className="absolute left-0 w-56 mt-2 origin-top-right bg-white divide-y divide-gray-100 rounded-md shadow-lg outline-none"
+												>
+													<div className="my-1">
+														{
+															PortfolioCategory.map((items) => (
+																<ItemsCategory key={items.id} category={items.name} linkRedirect={items.links} />
+															))
+														}
+													</div>
+												</Menu.Items>
+											</Transition>
+										</React.Fragment>
+									)}
+								</Menu>
+							</div>
 
 							<Link
 								href="/contact" passHref>
-								<p className="text-white text-sm  block px-3 py-2 rounded-md font-medium">
+								<p className="text-white text-sm  block px-3 py-2 hover:text-[#916BFF] hover:cursor-pointer rounded-md font-semibold">
 									Contact
 								</p>
 							</Link>
 							<Link
 								href="/about" passHref>
-								<p className="text-white text-sm block px-3 py-2 rounded-md font-medium">
+								<p className="text-white text-sm block px-3 py-2 hover:text-[#916BFF] hover:cursor-pointer rounded-md font-semibold">
 									About
 								</p>
 							</Link>
@@ -158,7 +310,7 @@ function Navbar() {
 					</div>
 				)}
 			</Transition>
-		</nav>
+		</nav >
 	)
 }
 
