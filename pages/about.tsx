@@ -1,9 +1,13 @@
+import BottomNav from 'components/organism/Navbar/BottomNav'
 import HeaderLayouts from 'layouts/HeaderLayouts'
 import PageLayouts from 'layouts/PageLayouts'
 import { NextPage } from 'next'
 import Head from 'next/head'
+import Image from "next/image"
 import React from 'react'
+import { FaBookOpen, FaCommentDots } from 'react-icons/fa'
 import Text from "../components/atoms/Text"
+import photo from "../assets/photo.png"
 
 const About: NextPage = () => {
     return (
@@ -36,7 +40,58 @@ const About: NextPage = () => {
                     </div>
                 </div>
             </HeaderLayouts>
-            <PageLayouts></PageLayouts>
+            <PageLayouts>
+                <div className="mt-20">
+                    <Image src={photo} width={200} height={200} alt={'photo'} />
+                    <div className="flex flex-col md:flex-row justify-between">
+                        <div className="w-full md:w-1/2 mb-10 md:mb-0 pr-0 md:pr-14">
+                            <h3 className="font-bold text-white text-2xl text-left mt-1 md:mt-3">Ferdian Ahmad R</h3>
+                            <h3 className="font-semibold text-blue-400 text-md text-left">Frontend Engineer at Smeshub Indonesia</h3>
+                            <h3 className="font-normal text-sm text-left mt-3 text-gray-400">Jombang, Indonesia</h3>
+
+                            <p className="text-sm font-normal text-gray-500">JavaSript Learner</p>
+
+                            <div className="mt-6">
+                                <h3 className="font-semibold text-md text-left text-white">About Personal</h3>
+                                <h3 className="font-normal text-sm text-left mt-1 text-gray-400">Im is a frontend engineer base in Jombang. Previous career, im join in a small agency in malang as a Frontend and also work as instructoor in web division</h3>
+                            </div>
+
+                            <div className="mt-6">
+                                <h3 className="font-semibold text-md text-left text-white">Email Address</h3>
+                                <h3 className="font-normal text-sm text-left mt-1 text-gray-400">ferdianahmadrozikin018@gmail.com</h3>
+                            </div>
+
+                            <div className="mt-6">
+                                <h3 className="font-semibold text-md text-left text-white">Phone Number</h3>
+                                <h3 className="font-normal text-sm text-left mt-1 text-gray-400">+62 812 5905 1310 ( Indonesia )</h3>
+                            </div>
+                        </div>
+
+                        <div className="w-full md:w-1/2 grid grid-cols-2 gap-3 md:gap-5">
+                            <div className="bg-gray-900 rounded-xl p-4">
+                                <h3 className="font-bold mb-4 text-xl text-left text-white">Work Experience</h3>
+                                <h3 className="font-semibold text-md text-left text-white">Frontend Engineer at Smeshub Indonesia</h3>
+                                <h3 className="font-normal text-sm text-left mt-1 text-gray-400">Jakarta, Indonesia</h3>
+                            </div>
+                            <div className="bg-gray-900 rounded-xl p-4">
+                                <h3 className="font-bold mb-4 text-xl text-left text-white">Education</h3>
+                                <h3 className="font-semibold text-md text-left text-white">Institut Teknologi Asia Malang</h3>
+                                <h3 className="font-normal text-sm text-left mt-1 text-gray-400">Malang, Indonesia</h3>
+                            </div>
+                            <div className="bg-gray-900 rounded-xl p-4">
+                                <h3 className="font-bold mb-4 text-xl text-left text-white">Certifications</h3>
+                                <h3 className="font-semibold text-md text-left text-white">Problem Solving Basic</h3>
+                                <h3 className="font-normal text-sm text-left mt-1 text-gray-400">September 2021</h3>
+                            </div>
+                            <div className="bg-gray-900 rounded-xl p-4">
+                                <h3 className="font-bold mb-4 text-xl text-left text-white">Careers</h3>
+                                <h3 className="font-semibold text-md text-left text-white">Frontend Engineer</h3>
+                                <h3 className="font-normal text-sm text-left mt-1 text-gray-400">2 Years Experience</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </PageLayouts>
         </React.Fragment>
     )
 }
