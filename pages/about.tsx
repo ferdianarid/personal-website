@@ -100,7 +100,7 @@ const About: NextPage = () => {
                             <img className='h-[215px] mr-2' src="https://github-readme-stats-eight-theta.vercel.app/api?username=ferdianar&show_icons=true&theme=algolia&include_all_commits=true&count_private=true" />
                             <img className='w-full mt-4 md:mt-0 h-[215px]' src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=ferdianar&layout=compact&langs_count=10&theme=algolia" />
                         </div>
-                        <h3 className="mt-48 md:mt-6 font-normal text-sm text-left text-gray-400">Im always learn and create a new things and then push a project into a github. In spare time, im do that everyday to improve my skill. Im very enthusiastic to learn a new technology and keep focus to build strong fundamentals programming</h3>
+                        <h3 className="mt-56 md:mt-6 font-normal text-sm text-left text-gray-400">Im always learn and create a new things and then push a project into a github. In spare time, im do that everyday to improve my skill. Im very enthusiastic to learn a new technology and keep focus to build strong fundamentals programming</h3>
                     </div>
 
 
@@ -108,7 +108,7 @@ const About: NextPage = () => {
                         <h3 className="font-bold text-white text-2xl text-left mt-1 md:mt-3">Github Profile Trophy</h3>
                         <h3 className="font-semibold text-blue-400 text-md text-left">This is my github Profile Thropy Statistics</h3>
                         <div className="mt-5">
-                            <img src="https://github-profile-trophy.vercel.app/?username=ferdianar&theme=juicyfresh&margin-w=8&margin-h=4&row=1&column=9" />
+                            <img src={`https://github-profile-trophy.vercel.app/?username=ferdianar&theme=juicyfresh&margin-w=8&margin-h=4&row=1&column=${6}`} />
                         </div>
                     </div>
                 </div>
