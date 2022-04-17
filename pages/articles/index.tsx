@@ -42,7 +42,7 @@ const Articles: NextPage = () => {
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-x-10 md:mt-6">
                                 {ArticleItems.map((article) => (
                                     <Article key={article.id}
-                                        srcImage={Delivery}
+                                        srcImage={article.srcImage}
                                         title={article.title}
                                         author={article.author}
                                         category={article.category}
