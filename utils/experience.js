@@ -1,14 +1,4 @@
 export const DataExperience = [{
-        id: 6,
-        position: "Frontend Engineer",
-        startDate: "March 2022",
-        endDate: "June 2022",
-        company: "Kawan Kerja",
-        duration: 3,
-        workStatus: "Contract",
-        location: "Bandung, West Java",
-        description: "Contracted for developing elearning platform from scratch. Consist of homepage, course, mentor and consultation pages. Not only that, but also develop for admin pages, register, login, reset password ad update profiles. For the technology used in Frontend, React.js with Tailwind CSS for styling. And the language is TypeScript. Integration with backend using Axios HTTP. Work with agile. Sprint planning every monday, led by Project Manager and CTO, to determine the backlog of tasks that will be done for the next planning. During working, always communication with Project Manager, UI/UX Designer and Backend Developer during design till development process."
-    }, {
         id: 5,
         position: "Frontend Engineer, Platform",
         startDate: "September 2021",
@@ -63,4 +53,15 @@ export const DataExperience = [{
         location: "Malang",
         description: "Building a small startup from scratch. Doing research and design with design thinking framework, competitive research, make a wireframe and UI High Fidelity Design. And then translate UI Design into code"
     }
+//                                {
+//         id: 6,
+//         position: "Frontend Engineer",
+//         startDate: "March 2022",
+//         endDate: "June 2022",
+//         company: "Kawan Kerja",
+//         duration: 3,
+//         workStatus: "Contract",
+//         location: "Bandung, West Java",
+//         description: "Contracted for developing elearning platform from scratch. Consist of homepage, course, mentor and consultation pages. Not only that, but also develop for admin pages, register, login, reset password ad update profiles. For the technology used in Frontend, React.js with Tailwind CSS for styling. And the language is TypeScript. Integration with backend using Axios HTTP. Work with agile. Sprint planning every monday, led by Project Manager and CTO, to determine the backlog of tasks that will be done for the next planning. During working, always communication with Project Manager, UI/UX Designer and Backend Developer during design till development process."
+//     }, 
 ];
